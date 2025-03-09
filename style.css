@@ -1,0 +1,376 @@
+@font-face {
+  font-family: montserrat;
+  src: url(./assets/Montserrat.zip);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: montserrat;
+}
+
+*::selection {
+  background-color: #f89aaa;
+  color: purple;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+
+}
+
+/* Fixed Background */
+.fixed-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #0909db80, #ec21ec9d, #ffa8b6ec);
+
+  z-index: -1;
+}
+
+
+#blue {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #fcb02441;
+  position: absolute;
+  top: 20%;
+  left: 19%;
+}
+
+
+
+/* Glass Container */
+.glass-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 1200px;
+  height: 80vh;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow-y: auto;
+  padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #ffffff1a;
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 4px 12px #0000001a;
+  border-radius: 10px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #700570;
+
+}
+
+/* Sections */
+.home-section,
+.about-section,
+.services-section,
+.projects-section,
+.testimonials-section,
+.contact-section {
+  padding: 60px 20px;
+
+}
+
+h2 {
+  font-size: 2.5vw;
+  font-family: montserrat;
+}
+
+#home .glass-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#home .glass-card .left {
+  width: 60%;
+  height: 100%;
+}
+
+.btn{
+  margin-top: 15px;
+}
+
+#home .glass-card .right {
+  width: 40%;
+  height: 100%;
+}
+
+#home .glass-card .right img {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-family: montserrat;
+  font-size: 2.8vw;
+  line-height: 3.4vw;
+
+}
+
+h1 span {
+  color: #700570;
+}
+
+#home p {
+  font-family: cursive;
+  font-weight: 500;
+  font-size: 1.5vw;
+  margin: 20px 0;
+}
+
+/* Glass Cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ffffff33;
+  border-radius: 20px;
+  color: #700570;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+#about .glass-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#about .glass-card #left {
+  width: 60%;
+  height: 100%;
+  
+}
+
+#about .glass-card #right {
+  width: 40%;
+  height: 100%;
+}
+
+#about .glass-card #right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#about p {
+  font-family: montserrat;
+  font-weight: 500;
+  font-size: 1.2vw;
+  line-height: 1.7vw;
+  margin: 20px 0;
+}
+
+.icon-cont {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px;
+  background-color: #ffffff50;
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  font-size: 2vw;
+
+}
+
+.icon-cont a {
+  color: purple;
+  text-decoration: none;
+  transition: all ease 0.2s;
+}
+
+.icon-cont a:hover {
+  color: orange;
+}
+
+li {
+  list-style: none;
+
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#services .glass-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all ease 0.2s;
+}
+
+#services .glass-card h3 {
+  font-size: 1.6vw;
+
+}
+
+#services .glass-card p {
+  text-align: center;
+
+}
+
+#services img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.testimonial-card {
+  width: 50vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+.testimonial-card h4 {
+  color: #700570;
+}
+
+#testimonials img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+#projects .glass-card {
+  width: 50vw;
+  min-height: 50vh;
+  border-radius: 20px;
+
+}
+
+#projects .glass-card img {
+  width: 100%;
+  height: 30%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+#contact .glass-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 20px;
+  width: 40%;
+  height: 100%;
+
+}
+
+input,
+textarea {
+  width: 80%;
+  border: none;
+  padding: 1vw;
+  border-radius: 20px;
+
+}
+
+#contact h3 {
+  font-size: 2vw;
+}
+
+/* Testimonials Hover Effect */
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+
+#services .glass-card:hover {
+  transform: translateY(-10px);
+
+}
+
+@media (max-width: 600px) {
+  #home{
+    flex-direction: column-reverse;
+  }
+
+
+  
+}

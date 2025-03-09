@@ -599,15 +599,17 @@ textarea {
   
   input,
   textarea {
-    width: 100%;
+    width: 120%;
     border: none;
-    padding: 2vw;
-    border-radius: 20px;
+    padding: 3vw;
+    border-radius: 10px;
   
   }
   
   #contact h3 {
-    font-size: 2vw;
+    font-size: 3vw;
+    text-align: center;
+    margin: 10px 0;
   }
   
 

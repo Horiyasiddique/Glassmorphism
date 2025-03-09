@@ -36,7 +36,6 @@ body {
   width: 100%;
   height: 100%;
   background: linear-gradient(to right, #0909db80, #ec21ec9d, #ffa8b6ec);
-
   z-index: -1;
 }
 
@@ -84,6 +83,10 @@ body {
   z-index: 1000;
   box-shadow: 0 4px 12px #0000001a;
   border-radius: 10px;
+}
+
+.navbar i {
+  display: none;
 }
 
 .logo {
@@ -139,7 +142,7 @@ h2 {
   height: 100%;
 }
 
-.btn{
+.btn {
   margin-top: 15px;
 }
 
@@ -206,7 +209,7 @@ h1 span {
 #about .glass-card #left {
   width: 60%;
   height: 100%;
-  
+
 }
 
 #about .glass-card #right {
@@ -367,10 +370,247 @@ textarea {
 }
 
 @media (max-width: 600px) {
-  #home{
+
+  /*responsive navbar styling*/
+  .nav-links {
+    display: none;
+  }
+
+  .navbar i {
+    display: block;
+    font-size: 4vw;
+    color: #fff;
+  }
+
+  .logo {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .home-section,
+  .about-section,
+  .services-section,
+  .projects-section,
+  .testimonials-section,
+  .contact-section {
+    padding: 30px 10px;
+
+  }
+
+  /*responsive home section styling*/
+  #home .glass-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column-reverse;
   }
 
+  #home .glass-card .left {
+    width: 100%;
+    height: 100%;
+  }
+
+  .btn {
+    margin-top: 15px;
+  }
+
+  #home .glass-card .right {
+    width: 100%;
+    height: 100%;
+  }
+
+  #home .glass-card .right img {
+    width: 100%;
+    height: 100%;
+  }
+
+  h1 {
+    font-family: montserrat;
+    font-size: 3vw;
+    text-align: center;
+    line-height: 3.4vw;
+
+  }
+
+  h1 span {
+    color: #700570;
+  }
+
+  #home p {
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 2.3vw;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 3vw;
+  }
+
+  /* responsive about me section styling*/
+  #about .glass-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  #about .glass-card #left {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  #about .glass-card #right {
+    width: 100%;
+    height: 100%;
+  }
+
+  #about .glass-card #right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #about p {
+    font-family: montserrat;
+    font-weight: 500;
+    font-size: 2vw;
+    line-height: 2.6vw;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .icon-cont {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px;
+    background-color: #ffffff50;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    font-size: 3vw;
+
+  }
+
+  /*responsive project section styling*/
+  #projects .glass-card {
+    width: 80vw;
+    min-height: 50vh;
+    border-radius: 20px;
+  
+  }
+
+  #projects .glass-card h3{
+    margin: 10px 0;
+
+  }
+
+  #projects .glass-card .btn{
+    margin: 20px 0;
+  }
+  
+  #projects .glass-card img {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  /*responsive services section styling*/
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #services .glass-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    transition: all ease 0.2s;
+  }
+
+  #services .glass-card h3 {
+    font-size: 3vw;
+
+  }
+
+  #services .glass-card p {
+    text-align: center;
+    font-size: 2.5vw;
+
+  }
+
+  #services img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+  }
+
+  .testimonial-card {
+    width: 70vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 15px;
+  }
 
   
+
+  #testimonials img {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+  }
+
+  /*responsive contact me styling*/
+  #contact .glass-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+  
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    border: none;
+    padding: 2vw;
+    border-radius: 20px;
+  
+  }
+  
+  #contact h3 {
+    font-size: 2vw;
+  }
+  
+
+
+
 }
